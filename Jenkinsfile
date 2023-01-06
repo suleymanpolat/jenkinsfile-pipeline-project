@@ -1,11 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('run') {
+        stage('build') {
             steps {
-                echo 'Clarusway_Way to Reinvent Yourself_V2'
-                sh 'python --version'
-                sh 'python pipeline.py'
+                echo 'Clarusway_Way to Reinvent Yourself'
+                sh 'echo Integrating Jenkins Pipeline with GitHub Webhook using Jenkinsfile'
             }
         }
     }
